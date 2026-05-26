@@ -20,8 +20,7 @@ def main() -> None:
         specificity=params["specificity"],
     )
 
-    print(f"P(disease | positive) = {posterior:.6f}")
-    print(f"P(disease | positive) = {posterior * 100:.2f}%")
+    print(f"P(disease | positive) = {posterior:.6f} ({posterior * 100:.2f}%)")
 
 
 if __name__ == "__main__":
